@@ -1,0 +1,136 @@
+{
+	"info": {
+		"_postman_id": "44d041a7-a76a-4622-90f1-c260c9898311",
+		"name": "Bia",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "1162030"
+	},
+	"item": [
+		{
+			"name": "Health",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/health",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"health"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumptions Monthly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/consumptions?meters_ids=1&start_date=2022-11-01&end_date=2023-01-01&kind_period=monthly",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"consumptions"
+					],
+					"query": [
+						{
+							"key": "meters_ids",
+							"value": "1"
+						},
+						{
+							"key": "start_date",
+							"value": "2022-11-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2023-01-01"
+						},
+						{
+							"key": "kind_period",
+							"value": "monthly"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumptions Daily",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/consumptions?meters_ids=1&start_date=2022-11-01&end_date=2023-01-01&kind_period=daily",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"consumptions"
+					],
+					"query": [
+						{
+							"key": "meters_ids",
+							"value": "1"
+						},
+						{
+							"key": "start_date",
+							"value": "2022-11-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2023-01-01"
+						},
+						{
+							"key": "kind_period",
+							"value": "daily"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Consumptions Weekly",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8081/consumptions?meters_ids=1&start_date=2022-11-01&end_date=2023-01-01&kind_period=weekly",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"consumptions"
+					],
+					"query": [
+						{
+							"key": "meters_ids",
+							"value": "1"
+						},
+						{
+							"key": "start_date",
+							"value": "2022-11-01"
+						},
+						{
+							"key": "end_date",
+							"value": "2023-01-01"
+						},
+						{
+							"key": "kind_period",
+							"value": "weekly"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
